@@ -1,0 +1,214 @@
+/* 🌙 Fullscreen Modern Layout */
+.app.dark {
+  background-color: #0f0f12;
+  color: #f0f0f0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Buttons */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1e1e24;
+  color: #ddd;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+nav button:hover {
+  background-color: #282830;
+}
+
+nav button.active {
+  background-color: #3a3aff;
+  color: #fff;
+}
+
+/* Content Section */
+section.card {
+  background-color: #18181b;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+/* Inputs and Buttons */
+input[type="file"],
+input[type="text"],
+input[type="search"],
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #0f0f12;
+  color: #eee;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3a3aff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #5757ff;
+}
+
+/* Status Messages */
+.status {
+  color: #90ee90;
+  margin-top: 10px;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+}
+
+/* AI Answer Box */
+.ai-answer {
+  background: #22232b;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  animation: fadeIn 0.4s ease;
+}
+
+.ai-answer h3 {
+  color: #a7b0ff;
+  margin-bottom: 0.5rem;
+}
+
+/* Sources Section */
+.sources {
+  margin-top: 1rem;
+  background-color: #141418;
+  padding: 1.2rem;
+  border-radius: 12px;
+  animation: fadeIn 0.4s ease;
+}
+
+.sources h4 {
+  color: #aaaaff;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 1rem 0;
+  border-top: 1px solid #222;
+  color: #666;
+  font-size: 0.9rem;
+  background: #0f0f12;
+}
+
+/* Fade-in animation for smooth appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Behavior */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  section.card {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.file-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2b2b2b;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.file-meta {
+  font-size: 0.85em;
+  color: #aaa;
+}
+
+.delete-btn {
+  background: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.delete-btn:hover {
+  background: #ff3333;
+}
