@@ -90,7 +90,7 @@ app.post("/upload", async (req, res) => {
       const lineStart = i * 15 + 1;
       const lineEnd = (i + 1) * 15;
       console.log(`🔹 Embedding for chunk ${i}:`, emb.data[0].embedding.slice(0, 10), "...");
-
+//------------------------------------UPSERT-------------------------------------------------------
       await namespace.upsert([
         {
           id: `${file.name}-${i}`,
