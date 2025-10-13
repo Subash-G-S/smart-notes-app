@@ -89,6 +89,7 @@ app.post("/upload", async (req, res) => {
       // ✅ Assign line numbers consistently
       const lineStart = i * 15 + 1;
       const lineEnd = (i + 1) * 15;
+      console.log(`🔹 Embedding for chunk ${i}:`, emb.data[0].embedding.slice(0, 10), "...");
 
       await namespace.upsert([
         {
