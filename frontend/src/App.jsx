@@ -189,7 +189,7 @@ export default function App() {
       )}
 
       <footer className="footer">
-        <p>Built with ❤️ using OpenAI + Pinecone — Subash</p>
+        <p>Built with ❤️ using OpenAI + Pinecone — Subash , Ranjith , Selva</p>
       </footer>
     </div>
   );
