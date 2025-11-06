@@ -14,6 +14,7 @@ const pdfModule = require("pdf-parse");
 const pdf = pdfModule.default || pdfModule;
 
 dotenv.config();
+console.log("🔑 Pinecone Key:", process.env.PINECONE_API_KEY ? "Loaded ✅" : "❌ Not found");
 
 const app = express();
 app.use(cors());
@@ -143,9 +144,9 @@ app.post("/search", async (req, res) => {
         allMatches.push(
           ...result.matches.map((m) => ({
             file: ns.name,
-            text: m.metadata.text || "",
-            lineStart: m.metadata.lineStart ?? null,
-            lineEnd: m.metadata.lineEnd ?? null,
+            text: m.metadata?.text || "",
+            lineStart: m.metadata?.lineStart ?? null,
+            lineEnd: m.metadata?.lineEnd ?? null,
           }))
         );
       }
