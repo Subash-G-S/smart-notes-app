@@ -46,8 +46,8 @@ This project lets you **upload documents (PDF, TXT, or HTML)**, automatically **
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/smart-document-search.git
-cd smart-document-search
+git clone https://github.com/Subash-G-S/smart-notes-app.git
+cd smart-notes-app
 ```
 
 ### 2️⃣ Install Dependencies
@@ -213,8 +213,10 @@ console.log(ns.namespaces);
 
 ---
 
-## 🪪 License
-This project is licensed under the **MIT License** — free to use and modify.
+## Team
+**Ranjith K**
+**Selva Surya**
+**G S Subash Chandra Bose**
 
 ---
 
