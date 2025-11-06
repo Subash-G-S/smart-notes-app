@@ -209,7 +209,7 @@ console.log(ns.namespaces);
 ## 🧑‍💻 Author
 **G S Subash Chandra Bose**  
 💬 *“Building AI that actually understands your data.”*  
-📧 [your-email@example.com]  
+📧 [subashgopi2006@gmail.com]  
 
 ---
 
